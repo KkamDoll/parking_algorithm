@@ -1,5 +1,4 @@
 import numpy as np
-import heapq
 
 class BicycleModel:
     def __init__(self, x=0.0, y = 0.0, theta=0.0, v=0.0,
@@ -47,4 +46,3 @@ class BicycleModel:
                 if np.hypot(cx - ox, cy - oy) <= r + orad:
                     return True     # 충돌
         return False                # 비충돌
-    
